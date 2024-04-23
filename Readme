@@ -1,1 +1,16 @@
+TASK 1
 
+1.Download Oracle Virtual machine and allocated 4GB RAM,100GB HDD
+
+2.Installation of Ubuntu 22.04 using Virtual Machine
+
+3.Installation of RISC-V GNU Toolchain
+
+4.Installation of Yosys
+
+5.Installation of iverilog
+
+6.Installation of gtkwave
+
+1.Installation of Ubuntu 22.04 using Virtual Machine
+![ubuntu](https://github.com/harsha240yeager/VSDSquadron_miniInternship/assets/105859299/1a138e13-08ee-4cf8-a065-c602d614e0ad)
