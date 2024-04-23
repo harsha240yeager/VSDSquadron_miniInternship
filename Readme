@@ -40,5 +40,11 @@ $ make
 $ sudo make install
 
 Yosys
+![yosys](https://github.com/harsha240yeager/VSDSquadron_miniInternship/assets/105859299/ba317979-8c27-4c37-9a07-38627512c916)
+
+4.Installation of iverilog
+
+sudo apt-get install iverilog 
+
 
 
