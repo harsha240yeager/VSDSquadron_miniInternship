@@ -45,6 +45,13 @@ Yosys
 4.Installation of iverilog
 
 sudo apt-get install iverilog 
+![iverilog](https://github.com/harsha240yeager/VSDSquadron_miniInternship/assets/105859299/82746fbc-16d6-4d66-a0d6-771630cb0018)
+
+5.Installation of gtkwave
+
+sudo apt update
+
+sudo apt install gtkwave
 
 
 
