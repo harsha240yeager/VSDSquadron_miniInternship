@@ -21,7 +21,7 @@ $ sudo apt-get install autoconf automake autotools-dev curl python3 python3-pip 
 $ git clone https://github.com/riscv/riscv-gnu-toolchain
 
 ./configure --prefix=/opt/riscv make linux
-  ![gnu2](https://github.com/harsha240yeager/VSDSquadron_miniInternship/assets/105859299/c14b6ee5-518e-4a20-8740-fb9a19262075)
+![gnu2](https://github.com/harsha240yeager/VSDSquadron_miniInternship/assets/105859299/c14b6ee5-518e-4a20-8740-fb9a19262075)
 ![riscv-gnu-toolkit](https://github.com/harsha240yeager/VSDSquadron_miniInternship/assets/105859299/39ceff7a-b014-40bf-8900-6577f3cfc3fa)
 
 3.Installation of Yosys
