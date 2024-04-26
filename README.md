@@ -1,4 +1,4 @@
-# TASK 1
+![image](https://github.com/harsha240yeager/VSDSquadron_miniInternship/assets/105859299/251b1325-887d-45d9-8a19-b611b91d8804)# TASK 1
 
 1.Download Oracle Virtual machine and allocated 4GB RAM,100GB HDD
 
@@ -72,14 +72,42 @@ In the world of computers, there's a new kid on the block called RISC-V. It's no
 **RISC-V Instruction Format**  
 1.Opcode (op): This field specifies the operation to be performed by the instruction. It determines the type of instruction, such as arithmetic, load/store, branch, or control transfer.
 Destination Register (rd): This field identifies the register where the result of the operation will be stored. For instructions that don't produce a result (like branches or jumps), this field may be unused.
-2.Source Register 1 (rs1): This field specifies the first source operand for the instruction. It typically contains data to be operated on, fetched from a register.
+2.Source Register 1 (rs1): This field specifies the first source operand for the instruction. It typically contains data to e operated on, fetched from a register.
 3.Source Register 2 (rs2): This field holds the second source operand for instructions that require two inputs. Like rs1, the data here comes from a register.
 4.Immediate (imm): For instructions that involve immediate values (constants), this field holds the immediate value directly encoded within the instruction itself. The immediate value could represent a constant to be added, a memory offset, or a shift amount, among other possibilities.
 5.Function Code (funct): In some instruction formats, particularly for extended instruction sets, this field may specify additional functionality or variant of the operation specified by the opcode.
 6.Memory Address (addr): For load and store instructions, this field holds the memory address to be accessed. It's often calculated by adding an offset to a base address stored in a register.
-The specific size and arrangement of these fields can vary depending on the instruction type and the RISC-V variant (e.g., RV32I, RV64I). Additionally, RISC-V supports a variety of instruction formats, including R-type (register-register), I-type (immediate), S-type (store), B-type (branch), and U-type (upper immediate), each tailored for different types of operations and addressing modes.  
+The specific size and arrangement of these fields can vary depending on the instruction type and the RISC-V variant (e.g., RV32I, RV64I). Additionally, RISC-V supports a variety of instruction formats, including R-type (register-register), I-type (immediate), S-type (store), B-type (branch), U-type (upper immediate) and J-type(jump) each tailored for different types of operations and addressing modes.  
 
 <img width="707" alt="1 " src="https://github.com/KeerthiPatil/VSDSQUADRON_MINI_INTERNSHIP/assets/167600409/66243587-505c-4fde-ada5-5c1d99089f9c">  
+
+**1.R-Format :** instructions using 3 register inputs
+  -add,xor,mul    -arithmetic/logical operations
+**1.I-Format :** instructions with immediates, loads
+  - addi, lw, jalr, slli
+**1.S-Format :**  store instructionss
+  -sw, sb
+**1.B-Format :** branch instructions
+  -beq, bge
+**1.U-Format :** instructions with upper immediates
+  -lui, auipc     —upper immediate is 20-bits
+**1.J-Format :** jump instructions
+  -jal
+
+![Instruction_formats](https://github.com/harsha240yeager/VSDSquadron_miniInternship/assets/105859299/307dab17-2a41-4cce-a866-78a2cd60461d)
+
+**All RISC32 R-format Instructions**
+![r_format_inst](https://github.com/harsha240yeager/VSDSquadron_miniInternship/assets/105859299/90832efa-a6b7-4c7c-b7f0-38102a53b4fe)
+
+**All RISC32 I-format Instructions**
+![I_format_inst](https://github.com/harsha240yeager/VSDSquadron_miniInternship/assets/105859299/4c9eb893-424a-47df-87cc-d28f57934772)
+
+**All RISC32 S-format Instructions**
+![S_format_inst](https://github.com/harsha240yeager/VSDSquadron_miniInternship/assets/105859299/70b0d9be-2f7a-4222-aa1c-84667875ecf4)
+
+**All RISC32 B-format Instructions**
+![B_format_inst](https://github.com/harsha240yeager/VSDSquadron_miniInternship/assets/105859299/61ccd2dc-20b1-4323-9aa5-6ebe820c6f72)
+
 
 
 
