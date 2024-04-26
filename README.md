@@ -1,4 +1,4 @@
-![image](https://github.com/harsha240yeager/VSDSquadron_miniInternship/assets/105859299/251b1325-887d-45d9-8a19-b611b91d8804)# TASK 1
+# TASK 1
 
 1.Download Oracle Virtual machine and allocated 4GB RAM,100GB HDD
 
