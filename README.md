@@ -140,6 +140,7 @@ The specific size and arrangement of these fields can vary depending on the inst
    Decoding in binary format we get : r5=00101,r2=00010,r9=01001.
    ![p4](https://github.com/harsha240yeager/VSDSquadron_miniInternship/assets/105859299/cb436340-0ef8-4296-a9a7-be765cf1263b)
 
+**!!Below are remaining to be solved**
 **5.xor r10,r1,r4 :-**
    Instruction type: R Type
    
