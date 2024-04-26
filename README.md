@@ -59,7 +59,9 @@ sudo apt install gtkwave
 
 Identify instruction type and exact 32-bit instruction code in the instruction type format.
 Below are instruction that are to be tested and simulated:-
+
 ![TEST_CASES](https://github.com/harsha240yeager/VSDSquadron_miniInternship/assets/105859299/e540fb6b-f426-4d80-9857-c9820e160110)
+
 
 ### Riscv Introduction 
 
@@ -87,22 +89,34 @@ The specific size and arrangement of these fields can vary depending on the inst
 <img width="707" alt="1 " src="https://github.com/KeerthiPatil/VSDSQUADRON_MINI_INTERNSHIP/assets/167600409/66243587-505c-4fde-ada5-5c1d99089f9c">  
 
 **1.R-Format :** instructions using 3 register inputs
+
   -add,xor,mul    -arithmetic/logical operations
 
+
 **2.I-Format :** instructions with immediates, loads
+
   - addi, lw, jalr, slli
 
+
 **3.S-Format :**  store instructionss
+
   -sw, sb
 
+
 **4.B-Format :** branch instructions
+
   -beq, bge
 
+
 **5.U-Format :** instructions with upper immediates
+
   -lui, auipc     —upper immediate is 20-bits
 
+
 **6.J-Format :** jump instructions
+
   -jal
+
 
 ![Instruction_formats](https://github.com/harsha240yeager/VSDSquadron_miniInternship/assets/105859299/307dab17-2a41-4cce-a866-78a2cd60461d)
 
@@ -129,7 +143,9 @@ The specific size and arrangement of these fields can vary depending on the inst
    Instruction type: R Type
    
    In R type instructions opcode=0110011,func7=0000000 . For add func3=000.The sum is stored in destination register r6 and r1,r2 are source registers .
+
    Decoding in binary format we get : r1=00001,r2=00010,r6=00110. 
+   
    ![p1](https://github.com/harsha240yeager/VSDSquadron_miniInternship/assets/105859299/55f25feb-d181-42d5-b9a7-ff3ec73be434)
 
     
@@ -137,21 +153,27 @@ The specific size and arrangement of these fields can vary depending on the inst
    Instruction type: R Type
    
    In R type instructions opcode=0110011,func7=0000000 . For sub func3=000.The sum is stored in destination register r7 and r2,r1 are source registers .
+   
    Decoding in binary format we get : r1=00001,r2=00010,r7=00111.
+   
    ![p2](https://github.com/harsha240yeager/VSDSquadron_miniInternship/assets/105859299/8e0dbd0d-c832-4532-b547-14c2f1ffe68c)
 
 **3.and r8,r1,r3 :-**
    Instruction type: R Type
    
    In R type instructions opcode=0110011,func7=0000000 . For and func3=000.The sum is stored in destination register r8 and r1,r3 are source registers .
+   
    Decoding in binary format we get : r1=00001,r3=00011,r8=01000.
+   
    ![p3](https://github.com/harsha240yeager/VSDSquadron_miniInternship/assets/105859299/0a7770b9-0f84-4bc7-8142-bc5f7787dae3)
 
 **4.or r9,r2,r5 :-**
    Instruction type: R Type
    
    In R type instructions opcode=0110011,func7=0000000 . For or func3=110.The sum is stored in destination register r9 and r2,r5 are source registers .
+   
    Decoding in binary format we get : r5=00101,r2=00010,r9=01001.
+   
    ![p4](https://github.com/harsha240yeager/VSDSquadron_miniInternship/assets/105859299/cb436340-0ef8-4296-a9a7-be765cf1263b)
 
 **!!Below are remaining to be solved**
@@ -159,54 +181,63 @@ The specific size and arrangement of these fields can vary depending on the inst
    Instruction type: R Type
    
    In R type instructions opcode=0110011,func7=0000000 . For add func3=000.The sum is stored in destination register r6 and r1,r2 are source registers .
+   
    Decoding in binary format we get : r1=00001,r2=00010,r6=00110.
 
 **6.slt r11,r2,r4 :-**
    Instruction type: R Type
    
    In R type instructions opcode=0110011,func7=0000000 . For add func3=000.The sum is stored in destination register r6 and r1,r2 are source registers .
+   
    Decoding in binary format we get : r1=00001,r2=00010,r6=00110.
 
 **7.addi r12,r4,r5 :-**
    Instruction type: R Type
    
    In R type instructions opcode=0110011,func7=0000000 . For add func3=000.The sum is stored in destination register r6 and r1,r2 are source registers .
+   
    Decoding in binary format we get : r1=00001,r2=00010,r6=00110.
 
 **8.sw r3,r1,2 :-**
    Instruction type: R Type
    
    In R type instructions opcode=0110011,func7=0000000 . For add func3=000.The sum is stored in destination register r6 and r1,r2 are source registers .
+   
    Decoding in binary format we get : r1=00001,r2=00010,r6=00110.
 
 **9.lw r13,r1,2 :-**
    Instruction type: R Type
    
    In R type instructions opcode=0110011,func7=0000000 . For add func3=000.The sum is stored in destination register r6 and r1,r2 are source registers .
+   
    Decoding in binary format we get : r1=00001,r2=00010,r6=00110.
 
 **10.beg r0,r0,15 :-**
    Instruction type: R Type
    
    In R type instructions opcode=0110011,func7=0000000 . For add func3=000.The sum is stored in destination register r6 and r1,r2 are source registers .
+   
    Decoding in binary format we get : r1=00001,r2=00010,r6=00110.
 
 **11.bne r0,r1,20 :-**
    Instruction type: R Type
    
    In R type instructions opcode=0110011,func7=0000000 . For add func3=000.The sum is stored in destination register r6 and r1,r2 are source registers .
+   
    Decoding in binary format we get : r1=00001,r2=00010,r6=00110.
 
 **12.sll r15,r1,r2(2) :-**
    Instruction type: R Type
    
    In R type instructions opcode=0110011,func7=0000000 . For add func3=000.The sum is stored in destination register r6 and r1,r2 are source registers .
+   
    Decoding in binary format we get : r1=00001,r2=00010,r6=00110.
 
 **13.srl r16,r14,r2(2) :-**
    Instruction type: R Type
    
    In R type instructions opcode=0110011,func7=0000000 . For add func3=000.The sum is stored in destination register r6 and r1,r2 are source registers .
+   
    Decoding in binary format we get : r1=00001,r2=00010,r6=00110.
    
 
