@@ -181,23 +181,29 @@ The specific size and arrangement of these fields can vary depending on the inst
 **5.xor r10,r1,r4 :-**
    Instruction type: R Type
    
-   In R type instructions opcode=0110011,func7=0000000 . For add func3=000.The sum is stored in destination register r6 and r1,r2 are source registers .
+   In R type instructions opcode=0110011,func7=0000000 . For xor func3=100.The sum is stored in destination register r9 and r1,r4 are source registers .
    
-   Decoding in binary format we get : r1=00001,r2=00010,r6=00110.
+   Decoding in binary format we get : r1=00001,r4=00100,r9=01001.
+
+   ![p5](https://github.com/harsha240yeager/VSDSquadron_miniInternship/assets/105859299/9ee91326-dcbc-4c09-94b6-f3a2485a985e)
 
 **6.slt r11,r2,r4 :-**
    Instruction type: R Type
    
-   In R type instructions opcode=0110011,func7=0000000 . For add func3=000.The sum is stored in destination register r6 and r1,r2 are source registers .
+   In R type instructions opcode=0110011,func7=0000000 . For slt func3=010.The sum is stored in destination register r11 and r4,r2 are source registers .
    
-   Decoding in binary format we get : r1=00001,r2=00010,r6=00110.
+   Decoding in binary format we get : r4=00100,r2=00010,r11=01011.
 
-**7.addi r12,r4,r5 :-**
-   Instruction type: R Type
+   ![p6](https://github.com/harsha240yeager/VSDSquadron_miniInternship/assets/105859299/2b3c9c77-bdd0-460c-a2cd-83465268cae2)
+
+**7.addi r12,r5.5 :-**
+   Instruction type: I Type
    
-   In R type instructions opcode=0110011,func7=0000000 . For add func3=000.The sum is stored in destination register r6 and r1,r2 are source registers .
+   In I type instructions opcode=0010011 . For addi func3=000.The sum is stored in destination register r12 and r5 is source registers .
    
-   Decoding in binary format we get : r1=00001,r2=00010,r6=00110.
+   Decoding in binary format we get :r5=00101,r12=01100,5=12'b000000000101
+
+   ![p7](https://github.com/harsha240yeager/VSDSquadron_miniInternship/assets/105859299/c042a473-a86f-455e-a42c-0e9f82c320e0)
 
 **8.sw r3,r1,2 :-**
    Instruction type: R Type
