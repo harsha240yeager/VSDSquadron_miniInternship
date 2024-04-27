@@ -199,52 +199,63 @@ The specific size and arrangement of these fields can vary depending on the inst
 **7.addi r12,r5.5 :-**
    Instruction type: I Type
    
-   In I type instructions opcode=0010011 . For addi func3=000.The sum is stored in destination register r12 and r5 is source registers .
+   In I type instructions opcode=0010011 . For addi func3=000.
    
    Decoding in binary format we get :r5=00101,r12=01100,5=12'b000000000101
 
    ![p7](https://github.com/harsha240yeager/VSDSquadron_miniInternship/assets/105859299/c042a473-a86f-455e-a42c-0e9f82c320e0)
 
 **8.sw r3,r1,2 :-**
-   Instruction type: R Type
+   Instruction type: S Type
    
-   In R type instructions opcode=0110011,func7=0000000 . For add func3=000.The sum is stored in destination register r6 and r1,r2 are source registers .
+   In S type instructions opcode=0100011 . For sw func3=010.
    
-   Decoding in binary format we get : r1=00001,r2=00010,r6=00110.
+   Decoding in binary format we get : r3=00011,r1=00001,2=7'b0000000|5'b00010.
+
+   ![p8](https://github.com/harsha240yeager/VSDSquadron_miniInternship/assets/105859299/a668ec03-03f5-4110-884b-027d8c825205)
 
 **9.lw r13,r1,2 :-**
-   Instruction type: R Type
+   Instruction type: I Type
    
-   In R type instructions opcode=0110011,func7=0000000 . For add func3=000.The sum is stored in destination register r6 and r1,r2 are source registers .
+   In I type instructions opcode=0000011 . For lw func3=010.
    
-   Decoding in binary format we get : r1=00001,r2=00010,r6=00110.
+   Decoding in binary format we get : r13=01101,r2=00001,2=12'b000000000010.
+
+   ![p9](https://github.com/harsha240yeager/VSDSquadron_miniInternship/assets/105859299/ee56096d-3bec-4d6f-9e9e-12374ad3927d)
+   
 
 **10.beg r0,r0,15 :-**
-   Instruction type: R Type
+   Instruction type: B Type
    
-   In R type instructions opcode=0110011,func7=0000000 . For add func3=000.The sum is stored in destination register r6 and r1,r2 are source registers .
+   In B type instructions involves conditional jumps based on certain conditions beign met.
    
-   Decoding in binary format we get : r1=00001,r2=00010,r6=00110.
+   
+  ![p10](https://github.com/harsha240yeager/VSDSquadron_miniInternship/assets/105859299/2bef1ca7-52dc-4bbf-bfd2-f3b3c6796722)
 
 **11.bne r0,r1,20 :-**
-   Instruction type: R Type
+   Instruction type: B Type
    
-   In R type instructions opcode=0110011,func7=0000000 . For add func3=000.The sum is stored in destination register r6 and r1,r2 are source registers .
-   
-   Decoding in binary format we get : r1=00001,r2=00010,r6=00110.
+   In B type instructions involves conditional jumps based on certain conditions beign met.
+
+   ![p11](https://github.com/harsha240yeager/VSDSquadron_miniInternship/assets/105859299/e8e74cce-743e-4cf1-82de-08a76dae89dc)
 
 **12.sll r15,r1,r2(2) :-**
    Instruction type: R Type
    
-   In R type instructions opcode=0110011,func7=0000000 . For add func3=000.The sum is stored in destination register r6 and r1,r2 are source registers .
+   In R type instructions opcode=0110011,func7=0000000 . For sll func3=001.The sum is stored in destination register r15 and r1,r2(2) are source registers .
    
-   Decoding in binary format we get : r1=00001,r2=00010,r6=00110.
+   Decoding in binary format we get : r1=00001,r2(2)=01000,r15=01111.
+
+   ![r12](https://github.com/harsha240yeager/VSDSquadron_miniInternship/assets/105859299/eb285310-7ec9-4ad2-929f-bcc09e10cce6)
 
 **13.srl r16,r14,r2(2) :-**
    Instruction type: R Type
    
-   In R type instructions opcode=0110011,func7=0000000 . For add func3=000.The sum is stored in destination register r6 and r1,r2 are source registers .
+   In R type instructions opcode=0110011,func7=0000000 . For srl func3=1011.The sum is stored in destination register r16 and r14,r2(2) are source registers .
    
-   Decoding in binary format we get : r1=00001,r2=00010,r6=00110.
+   Decoding in binary format we get : r14=01110,r2(2)=01000,r16=10000.
+
+   ![p13](https://github.com/harsha240yeager/VSDSquadron_miniInternship/assets/105859299/10b69184-494e-445a-a645-b920317f4636)
+
    
 
