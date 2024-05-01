@@ -18,6 +18,7 @@
 2.Installation of RISC-V GNU Toolchain
 
 $ sudo apt-get install autoconf automake autotools-dev curl python3 python3-pip libmpc-dev libmpfr-dev libgmp-dev gawk build-essential bison flex texinfo gperf libtool patchutils bc zlib1g-dev libexpat-dev ninja-build git cmake libglib2.0-dev libslirp-dev
+
 $ git clone https://github.com/riscv/riscv-gnu-toolchain
 
 ./configure --prefix=/opt/riscv make linux
@@ -265,6 +266,7 @@ leafpad sum1ton.c &
   ![s1](https://github.com/harsha240yeager/VSDSquadron_miniInternship/assets/105859299/63762f9d-6eba-47e4-ad2a-76db794c7e19)
 
   gcc sum1ton.c
+  
   ./a.out
 
   ![s2](https://github.com/harsha240yeager/VSDSquadron_miniInternship/assets/105859299/2ff7ab64-28bf-4965-918c-e12ba6ec3d4c)
@@ -276,6 +278,7 @@ leafpad sum1ton.c &
   ![s4](https://github.com/harsha240yeager/VSDSquadron_miniInternship/assets/105859299/e307770c-6327-431c-acf2-be81eebd1beb)
 
   riscv64-unknown-elf-objdump -d sum1ton.o
+  
   riscv64-unknown-elf-objdump -d sum1ton.o | less
 
 ![s5](https://github.com/harsha240yeager/VSDSquadron_miniInternship/assets/105859299/16899512-5120-477a-9e38-638ce2c1acf9)
