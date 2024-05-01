@@ -176,7 +176,6 @@ The specific size and arrangement of these fields can vary depending on the inst
    
    ![p4](https://github.com/harsha240yeager/VSDSquadron_miniInternship/assets/105859299/cb436340-0ef8-4296-a9a7-be765cf1263b)
 
-**!!Below are remaining to be solved**
 
 **5.xor r10,r1,r4 :-**
    Instruction type: R Type
@@ -257,5 +256,5 @@ The specific size and arrangement of these fields can vary depending on the inst
 
    ![p13](https://github.com/harsha240yeager/VSDSquadron_miniInternship/assets/105859299/10b69184-494e-445a-a645-b920317f4636)
 
-   
+   # Task 3
 
