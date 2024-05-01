@@ -258,3 +258,24 @@ The specific size and arrangement of these fields can vary depending on the inst
 
    # Task 3
 
+  Refer to C based Lab video and RISC-V based lab videos. Complete exact steps on your machine. Upload snapshot of compiled C code and RISC-V Objdmp on your GitHub repo.
+
+leafpad sum1ton.c &
+
+  ![s1](https://github.com/harsha240yeager/VSDSquadron_miniInternship/assets/105859299/63762f9d-6eba-47e4-ad2a-76db794c7e19)
+
+  gcc sum1ton.c
+  ./a.out
+
+  ![s2](https://github.com/harsha240yeager/VSDSquadron_miniInternship/assets/105859299/2ff7ab64-28bf-4965-918c-e12ba6ec3d4c)
+
+  riscv64-unknown-elf-gcc -O1 -mabi=lp64 -march=rv64i -o sum1ton.o sum1ton.c
+
+  ![s3](https://github.com/harsha240yeager/VSDSquadron_miniInternship/assets/105859299/7e0c5a14-f0ad-4ce3-a825-5bd04da58d2f)
+  
+  ![s4](https://github.com/harsha240yeager/VSDSquadron_miniInternship/assets/105859299/e307770c-6327-431c-acf2-be81eebd1beb)
+
+  riscv64-unknown-elf-objdump -d sum1ton.o
+  riscv64-unknown-elf-objdump -d sum1ton.o | less
+
+![s5](https://github.com/harsha240yeager/VSDSquadron_miniInternship/assets/105859299/16899512-5120-477a-9e38-638ce2c1acf9)
