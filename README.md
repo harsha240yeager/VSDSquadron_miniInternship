@@ -282,3 +282,57 @@ leafpad sum1ton.c &
   riscv64-unknown-elf-objdump -d sum1ton.o | less
 
 ![s5](https://github.com/harsha240yeager/VSDSquadron_miniInternship/assets/105859299/16899512-5120-477a-9e38-638ce2c1acf9)
+
+
+# TASK 4
+
+SPIKE Simulation and observation with -O1 and -Ofast. Upload snapshot of compiled C Code, RISC-V Objdmp with above options on your GitHub repo
+
+**Spike installation**
+```
+$ git clone https://github.com/riscv/riscv-isa-sim.git      
+$ cd riscv-isa-sim    
+$ mkdir build  
+$ cd build  
+$ ../configure --prefix=/opt/riscv
+$ sudo apt-get install device-tree-compiler
+$ make  
+$ sudo apt update  
+$ sudo apt install g++-8  
+$ make CXX=g++-8  
+$ sudo make install  
+$ echo 'export PATH=$PATH:/opt/riscv/bin' >> ~/.bashrc  
+$ source ~/.bashrc
+```
+
+**pk installation**
+```
+$ git clone https://github.com/riscv/riscv-pk.git    
+$ cd riscv-pk    
+$ mkdir build    
+$ cd build      
+$ ../configure --prefix=/home/vsduser/riscv --host=riscv64-unknown-elf --with-arch=rv64gc    
+$ make    
+$ sudo make install
+```
+
+**Commands which provide output of sum of numbers from 1 to n using gcc compiler**
+```
+$ riscv64-unknown-elf-gcc -Ofast -mabi=lp64 -march=rv64i -o sum1ton.o sum1ton.c
+$ gcc sum1ton.c
+$ ./a.out
+```
+
+**Debugging the C code using spike**
+
+```
+$ spike pk sum1ton.o
+$ spike -d pk sum1ton.o
+until pc 0 100b0 (program counter(PC) to run till the starting address of the "main" which is 100b0)
+```
+![spike](https://github.com/harsha240yeager/VSDSquadron_miniInternship/assets/105859299/c0d8f4ad-6581-4352-b905-f8317a6ca277)
+
+
+
+
+
