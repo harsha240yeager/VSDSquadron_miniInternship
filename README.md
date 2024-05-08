@@ -333,6 +333,24 @@ until pc 0 100b0 (program counter(PC) to run till the starting address of the "m
 ![spike](https://github.com/harsha240yeager/VSDSquadron_miniInternship/assets/105859299/c0d8f4ad-6581-4352-b905-f8317a6ca277)
 
 
+# TASK 5
+
+Use this RISC-V Core Verilog netlist and testbench for functional simulation experiment. Upload waveform snapshots for the commands on your GitHub.
+
+**Initial steps to follow**
+```
+$ git clone https://github.com/harsha240yeager/VSDSquadron_miniInternship.git
+$ cd VSDSquadron-miniInternship
+$ iverilog -o VSDSquadron-miniInternship iv_gt.v iv_gt_tb.v
+$ vvp VSDSquadron-miniInternship
+$ gtkwave iv_gt.vcd
+```
+
+![gt1](https://github.com/harsha240yeager/VSDSquadron_miniInternship/assets/105859299/3caff867-32f1-4133-9c3c-879ba544830b)
+
+![gt2](https://github.com/harsha240yeager/VSDSquadron_miniInternship/assets/105859299/5101c87d-665d-482e-9f85-22bd44348170)
+
+
 
 
 
