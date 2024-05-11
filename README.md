@@ -350,6 +350,12 @@ $ gtkwave iv_gt.vcd
 
 ![gt2](https://github.com/harsha240yeager/VSDSquadron_miniInternship/assets/105859299/5101c87d-665d-482e-9f85-22bd44348170)
 
+![gtk1](https://github.com/harsha240yeager/VSDSquadron_miniInternship/assets/105859299/865dcf39-6ef8-4d30-9181-2856bcef5b0e)
+
+**Instrunctions present in the Design file defined with specific Hexadecimal number**
+
+
+
 
 
 
