@@ -352,7 +352,66 @@ $ gtkwave iv_gt.vcd
 
 ![gtk1](https://github.com/harsha240yeager/VSDSquadron_miniInternship/assets/105859299/865dcf39-6ef8-4d30-9181-2856bcef5b0e)
 
-**Instrunctions present in the Design file defined with specific Hexadecimal number**
+## Instrunctions present in the Design file defined with specific Hexadecimal number
+
+![i1](https://github.com/harsha240yeager/VSDSquadron_miniInternship/assets/105859299/7b37f799-0843-4b94-ae27-c0518254cce2)
+
+### Specified Instruction set Outputs
+
+IR - 32 bit Instruction , RD - Destination Register , A & B - Source Registers , ALUOUT - Output
+
+**Instruction 1 -: ADD R6, R2, R1**
+
+![ii1](https://github.com/harsha240yeager/VSDSquadron_miniInternship/assets/105859299/8f4e9bd9-143d-4119-b03a-5228897330dd)
+
+
+**Instruction 2 -: SUB R7, R1, R2**
+
+![ii2](https://github.com/harsha240yeager/VSDSquadron_miniInternship/assets/105859299/29384d45-e6fa-4f8b-93c5-3278dd71715e)
+
+
+
+**Instruction 3 -: AND R8, R1, R3**
+
+![ii3](https://github.com/harsha240yeager/VSDSquadron_miniInternship/assets/105859299/d4e58ed2-79d9-4918-be66-ed266eda4362)
+
+
+
+**Instruction 4 -: OR R9, R2, R5**
+
+![ii4](https://github.com/harsha240yeager/VSDSquadron_miniInternship/assets/105859299/2f32754c-4f3a-4e1c-a78d-c702cac4209c)
+
+
+**Instruction 5 -: XOR R10, R1, R4**
+
+![ii5](https://github.com/harsha240yeager/VSDSquadron_miniInternship/assets/105859299/69ebcb8f-da98-47d0-bedd-e2cf7e1db8f0)
+
+
+**Instruction 6 -: SLT R1, R2, R4**
+
+![ii6](https://github.com/harsha240yeager/VSDSquadron_miniInternship/assets/105859299/d28813a5-9e44-4b01-915e-3175404f8685)
+
+**Instruction 7 -: ADDI R12, R4, 5**
+
+![ii7](https://github.com/harsha240yeager/VSDSquadron_miniInternship/assets/105859299/d82b9f65-70f3-4c8b-8328-1e67c17d96dd)
+
+
+**Instruction 8 -: BEQ R0, R0, 15**
+
+![ii8](https://github.com/harsha240yeager/VSDSquadron_miniInternship/assets/105859299/ca6c5fa8-886a-42d7-aefd-9335e451d05d)
+
+
+**Instruction 9 -: LW R13,R1,2**
+
+![ii9](https://github.com/harsha240yeager/VSDSquadron_miniInternship/assets/105859299/172c880f-7964-47cc-b80d-b0b61fcbdfcf)
+
+
+**Instruction 10 -: SW R3,R1,2**
+
+![ii10](https://github.com/harsha240yeager/VSDSquadron_miniInternship/assets/105859299/831ab3f9-3772-4baf-af73-847a48d0a12d)
+
+
+
 
 
 
