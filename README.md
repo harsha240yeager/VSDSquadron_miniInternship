@@ -620,6 +620,7 @@ int main()
 
 ### Application Video  
 
+[Video link](https://drive.google.com/file/d/1pPG_-_EH2geWBX1sQKpaL642XB0bNlLJ/view?usp=sharing)
 
 </details>
 
@@ -629,7 +630,7 @@ int main()
 <summary>Acknowledgement</summary>
 <br>
 
->*I would like to thank Kunal Ghosh Sir for this amazing internship experience on RISCV Architecture using VSDSquadron Mini. I was really passionate about diving into the world of RISCV, and here i got the kickstart. I had an amazing experience throughout this internship program. Thanks a lot VLSI System Design for launching such a phoenomenal research internship*  
+>*I extend my heartfelt gratitude to Kunal Ghosh Sir for providing an exceptional internship experience focused on RISC-V Architecture using VSDSquadron Mini. This opportunity has enabled me to delve into the realm of RISC-V with enthusiasm, serving as an invaluable kickstart to my journey. I have cherished every moment of this internship program and am immensely grateful to VLSI System Design for offering such an extraordinary research internship opportunity.*  
 
 </details>
 
