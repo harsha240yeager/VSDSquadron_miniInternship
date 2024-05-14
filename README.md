@@ -498,6 +498,7 @@ This project involves the implementation of a Full Subtractor combinational circ
 
 ![sub_l](https://github.com/harsha240yeager/VSDSquadron_miniInternship/assets/105859299/9cec7e1d-50b8-4051-8112-ae5d428f4c98)
 
+---
 
 D   = A’B’Bin + A’BBin’ + AB’Bin’ + ABBin
    
@@ -518,7 +519,7 @@ D   = A’B’Bin + A’BBin’ + AB’Bin’ + ABBin
      = A’Bin(B + B’) + A’B(Bin + Bin’) + BBin(A + A’)
      
      = A’Bin + A’B + BBin
-     
+---     
   
 ### **Hardware Connections**  
 * **Input:** Three input of single bit are connected to the GPIO pins of VSDSquadron Mini via push buttons mounted on the breadboard.  
