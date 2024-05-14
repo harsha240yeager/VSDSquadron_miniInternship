@@ -477,8 +477,161 @@ IR - 32 bit Instruction , RD - Destination Register , A & B - Source Registers ,
 <summary><b>Task 6:</b> The culminating task of this internship entails implementing a digital circuit utilizing VSDSquadron Mini and verifying the functionality by assessing the building and uploading process of a C program file onto the RISC-V processor</summary> 
 
 
+## Implementing Full Subtractor using VSDSquadron Mini  
+  
+### **Overview**  
+This project involves the implementation of a Full Subtractor combinational circuit using VSDSquadron Mini, a RISCV based SoC development kit. Full Subtractor is an essential component in digital electronics, commonly employed in designing n-bit Subtracter circuits. A full subtractor circuit is a digital circuit that subtracts two binary digits and a borrow-in digit to produce a difference and borrow-out digit. It serves as a crucial element in digital circuits performing subtraction operations. This project showcases the practical application of digital logic and RISC-V architecture in executing arithmetic operations. It demonstrates the process of reading and writing binary data through GPIO pins, implementing the operation of full subtractor through digital logic gates simulated using PlatformIO IDE, and displaying the outputs using LEDs. 
+
+![sub1](https://github.com/harsha240yeager/VSDSquadron_miniInternship/assets/105859299/cdd4837d-b41b-4636-89f7-647d3045633a)
+
+  
+### **Components Required**  
+* VSDSquadron Mini  
+* Push Buttons for Input of binary data  
+* 2 LEDs for displaying the Output  
+* Breadboard  
+* Jumper Wires  
+* VS Code for Software Development  
+* PlatformIO multi framework professional IDE
+
+### **Logical Diagram and Expressions**
+
+![sub_l](https://github.com/harsha240yeager/VSDSquadron_miniInternship/assets/105859299/9cec7e1d-50b8-4051-8112-ae5d428f4c98)
 
 
+D   = A’B’Bin + A’BBin’ + AB’Bin’ + ABBin
+    = Bin(A’B’ + AB)  + Bin’(AB’ + A’B)
+    = Bin( A XNOR B) + Bin’(A XOR B)
+    = Bin (A XOR B)’  +  Bin’(A XOR B)
+    = Bin XOR (A XOR B)
+    = (A XOR B) XOR Bin
+
+ Bout = A’B’Bin + A’BBin’ + A’BBin + ABBin      
+     = A’B’Bin +A’BBin’ + A’BBin + A’BBin + A’BBin + ABBin
+     = A’Bin(B + B’) + A’B(Bin + Bin’) + BBin(A + A’)
+     = A’Bin + A’B + BBin
+     
+  
+### **Hardware Connections**  
+* **Input:** Three input of single bit are connected to the GPIO pins of VSDSquadron Mini via push buttons mounted on the breadboard.  
+* **Outputs:** Two LEDs are connected to display the result of Full Subtractor.   
+  
+### **Truth Table to Verify the Full Adder**  
+
+![sub_truth](https://github.com/harsha240yeager/VSDSquadron_miniInternship/assets/105859299/5ec2821d-c295-4eee-badb-1e8b0a0df4f6)
+
+    
+### Program  
+```
+// Full Subtractor Implementation
+
+// Included the required header files
+#include <stdio.h>
+#include <debug.h>
+#include <ch32v00x.h>
+
+// Defining the Logic Gate Functions
+int and(int bit1, int bit2)
+{
+    int out = bit1 & bit2;
+    return out;
+}
+int or(int bit1, int bit2)
+{
+    int out = bit1 | bit2;
+    return out;
+}
+int xor(int bit1, int bit2)
+{
+    int out = bit1 ^ bit2;
+    return out;
+}
+int not(int bit)
+{
+    int out = ~bit & 1; // Ensuring only the least significant bit is considered
+    return out;
+}
+
+// Configuring GPIO Pins
+void GPIO_Config(void)
+{
+    GPIO_InitTypeDef GPIO_InitStructure = {0}; // structure variable used for GPIO configuration
+    RCC_APB2PeriphClockCmd(RCC_APB2Periph_GPIOD, ENABLE); // to enable the clock for port D
+    RCC_APB2PeriphClockCmd(RCC_APB2Periph_GPIOC, ENABLE); // to enable the clock for port C
+    
+    // Input Pins Configuration
+    GPIO_InitStructure.GPIO_Pin = GPIO_Pin_1 | GPIO_Pin_2 | GPIO_Pin_3;
+    GPIO_InitStructure.GPIO_Mode = GPIO_Mode_IPU; // Defined as Input Type with pull-up
+    GPIO_Init(GPIOD, &GPIO_InitStructure);
+
+    // Output Pins Configuration
+    GPIO_InitStructure.GPIO_Pin = GPIO_Pin_4 | GPIO_Pin_5;
+    GPIO_InitStructure.GPIO_Mode = GPIO_Mode_Out_PP; // Defined Output Type
+    GPIO_InitStructure.GPIO_Speed = GPIO_Speed_50MHz; // Defined Speed
+    GPIO_Init(GPIOC, &GPIO_InitStructure);
+}
+
+// The MAIN function responsible for the execution of the program
+int main()
+{
+    uint8_t A, B, Bin, Diff, Bout; // Declared the required variables
+    uint8_t p, q, r; 
+    NVIC_PriorityGroupConfig(NVIC_PriorityGroup_2);
+    SystemCoreClockUpdate();
+    Delay_Init();
+    GPIO_Config();
+
+    while(1)
+    {
+        A = GPIO_ReadInputDataBit(GPIOD, GPIO_Pin_1);
+        B = GPIO_ReadInputDataBit(GPIOD, GPIO_Pin_2);
+        Bin = GPIO_ReadInputDataBit(GPIOD, GPIO_Pin_3);
+        
+        // Full Subtractor Logic
+        Diff = xor(xor(A, B), Bin); // Difference = A ⊕ B ⊕ Bin
+        p = and(not(A), B); // p = A' B
+        q = and(B, Bin); // q = B Bin
+        r = and(not(A), Bin); // r = A' Bin
+        Bout = or(or(p, q), r); // Borrow out = A' B + B Bin + A' Bin
+
+        // Write the Difference output
+        if(Diff == 1)
+        {
+            GPIO_WriteBit(GPIOC, GPIO_Pin_4, RESET); // LED on for Difference = 1
+        }
+        else
+        {
+            GPIO_WriteBit(GPIOC, GPIO_Pin_4, SET); // LED off for Difference = 0
+        }
+
+        // Write the Borrow output
+        if(Bout == 1)
+        {
+            GPIO_WriteBit(GPIOC, GPIO_Pin_5, RESET); // LED on for Borrow out = 1
+        }
+        else
+        {
+            GPIO_WriteBit(GPIOC, GPIO_Pin_5, SET); // LED off for Borrow out = 0
+        }
+    }
+}
+                                                                                              
+```  
+
+### Application Video  
+
+
+</details>
+
+--------------------------------------------------------------
+
+<details>
+<summary>Acknowledgement</summary>
+<br>
+
+>*I would like to thank Kunal Ghosh Sir for this amazing internship experience on RISCV Architecture using VSDSquadron Mini. I was really passionate about diving into the world of RISCV, and here i got the kickstart. I had an amazing experience throughout this internship program. Thanks a lot VLSI System Design for launching such a phoenomenal research internship*  
+
+</details>
 
 
 
