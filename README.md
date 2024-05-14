@@ -58,7 +58,7 @@ $ make config-gcc
 $ make
 
 $ sudo make install
-```
+
 $ Yosys
 ```
 ![yosys](https://github.com/harsha240yeager/VSDSquadron_miniInternship/assets/105859299/ba317979-8c27-4c37-9a07-38627512c916)
@@ -75,13 +75,13 @@ $ sudo apt-get install iverilog
 $ sudo apt update
 
 $ sudo apt install gtkwave
-
 ```
+
 ![gtkwave](https://github.com/harsha240yeager/VSDSquadron_miniInternship/assets/105859299/c00d0487-dfec-4f31-be8b-0cf29c2f9e57)
 
 </details>
 
-------------------------------------------------------------------------------------------------------------------
+--------------------------------------------------------------------
 
 <details>
 <summary><b>Task 2:</b> The objective is to discern the instruction type of each provided instruction and to present its precise 32-bit instruction code in the designated format for the respective instruction type.</summary>
