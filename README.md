@@ -35,16 +35,17 @@ The program is designed around the RISC-V architecture, utilizing open-source to
 
 2.Installation of RISC-V GNU Toolchain
 
+```
 $ sudo apt-get install autoconf automake autotools-dev curl python3 python3-pip libmpc-dev libmpfr-dev libgmp-dev gawk build-essential bison flex texinfo gperf libtool patchutils bc zlib1g-dev libexpat-dev ninja-build git cmake libglib2.0-dev libslirp-dev
-
 $ git clone https://github.com/riscv/riscv-gnu-toolchain
+$ ./configure --prefix=/opt/riscv make linux
+```
 
-./configure --prefix=/opt/riscv make linux
 ![gnu2](https://github.com/harsha240yeager/VSDSquadron_miniInternship/assets/105859299/c14b6ee5-518e-4a20-8740-fb9a19262075)
 ![riscv-gnu-toolkit](https://github.com/harsha240yeager/VSDSquadron_miniInternship/assets/105859299/39ceff7a-b014-40bf-8900-6577f3cfc3fa)
 
 3.Installation of Yosys
-
+```
 $ git clone https://github.com/YosysHQ/yosys.git
 
 $ sudo apt install make
@@ -57,20 +58,25 @@ $ make config-gcc
 $ make
 
 $ sudo make install
-
-Yosys
+```
+$ Yosys
+```
 ![yosys](https://github.com/harsha240yeager/VSDSquadron_miniInternship/assets/105859299/ba317979-8c27-4c37-9a07-38627512c916)
 
 4.Installation of iverilog
+```
+$ sudo apt-get install iverilog 
+```
 
-sudo apt-get install iverilog 
 ![iverilog](https://github.com/harsha240yeager/VSDSquadron_miniInternship/assets/105859299/82746fbc-16d6-4d66-a0d6-771630cb0018)
 
 5.Installation of gtkwave
+```
+$ sudo apt update
 
-sudo apt update
+$ sudo apt install gtkwave
 
-sudo apt install gtkwave
+```
 ![gtkwave](https://github.com/harsha240yeager/VSDSquadron_miniInternship/assets/105859299/c00d0487-dfec-4f31-be8b-0cf29c2f9e57)
 
 </details>
@@ -291,27 +297,33 @@ The specific size and arrangement of these fields can vary depending on the inst
  # Task 3
 
   Refer to C based Lab video and RISC-V based lab videos. Complete exact steps on your machine. Upload snapshot of compiled C code and RISC-V Objdmp on your GitHub repo.
+```
+$ leafpad sum1ton.c &
 
-leafpad sum1ton.c &
+```
 
   ![s1](https://github.com/harsha240yeager/VSDSquadron_miniInternship/assets/105859299/63762f9d-6eba-47e4-ad2a-76db794c7e19)
 
-  gcc sum1ton.c
+```
+ $ gcc sum1ton.c
   
-  ./a.out
+ $ ./a.out
+
+  ```
 
   ![s2](https://github.com/harsha240yeager/VSDSquadron_miniInternship/assets/105859299/2ff7ab64-28bf-4965-918c-e12ba6ec3d4c)
-
-  riscv64-unknown-elf-gcc -O1 -mabi=lp64 -march=rv64i -o sum1ton.o sum1ton.c
-
+```
+ $ riscv64-unknown-elf-gcc -O1 -mabi=lp64 -march=rv64i -o sum1ton.o sum1ton.c
+```
   ![s3](https://github.com/harsha240yeager/VSDSquadron_miniInternship/assets/105859299/7e0c5a14-f0ad-4ce3-a825-5bd04da58d2f)
   
   ![s4](https://github.com/harsha240yeager/VSDSquadron_miniInternship/assets/105859299/e307770c-6327-431c-acf2-be81eebd1beb)
-
-  riscv64-unknown-elf-objdump -d sum1ton.o
+```
+ $ riscv64-unknown-elf-objdump -d sum1ton.o
   
-  riscv64-unknown-elf-objdump -d sum1ton.o | less
+ $ riscv64-unknown-elf-objdump -d sum1ton.o | less
 
+```
 ![s5](https://github.com/harsha240yeager/VSDSquadron_miniInternship/assets/105859299/16899512-5120-477a-9e38-638ce2c1acf9)
 
 </details>
