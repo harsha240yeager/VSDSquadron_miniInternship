@@ -501,27 +501,19 @@ This project involves the implementation of a Full Subtractor combinational circ
 ---
 
 D   = (A XOR B) XOR Bin
-    
+--- 
     = A’B’Bin + A’BBin’ + AB’Bin’ + ABBin
-   
-    = Bin(A’B’ + AB)  + Bin’(AB’ + A’B)
-    
-    = Bin( A XNOR B) + Bin’(A XOR B)
-    
+    = Bin(A’B’ + AB)  + Bin’(AB’ + A’B)  
+    = Bin( A XNOR B) + Bin’(A XOR B)  
     = Bin (A XOR B)’  +  Bin’(A XOR B)
-    
     = Bin XOR (A XOR B)
-    
     = (A XOR B) XOR Bin
-
+----
  Bout= A’Bin + A’B + BBin
- 
+---
      = A’B’Bin + A’BBin’ + A’BBin + ABBin      
-    
      = A’B’Bin +A’BBin’ + A’BBin + A’BBin + A’BBin + ABBin
-     
      = A’Bin(B + B’) + A’B(Bin + Bin’) + BBin(A + A’)
-     
      = A’Bin + A’B + BBin
 ---     
   
