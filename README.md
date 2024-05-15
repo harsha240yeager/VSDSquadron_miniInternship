@@ -13,7 +13,7 @@ The program is designed around the RISC-V architecture, utilizing open-source to
 ----------------------------------------------------------------------------------------------------------------
 
 <details>
-<summary><b>**Task 1:** The objective is to install all essential tools required for the internship, including Ubuntu on VMBox, the GNU Toolchain, GTKWave, Yosys, and the iVerilog simulator.</summary>   
+<summary><b>Task 1:</b> The objective is to install all essential tools required for the internship, including Ubuntu on VMBox, the GNU Toolchain, GTKWave, Yosys, and the iVerilog simulator.</summary>   
 <br>
 
 # TASK 1
