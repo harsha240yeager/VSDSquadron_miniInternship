@@ -519,7 +519,10 @@ D   = (A XOR B) XOR Bin
   
 ### **Hardware Connections**  
 * **Input:** Three input of single bit are connected to the GPIO pins of VSDSquadron Mini via push buttons mounted on the breadboard.  
-* **Outputs:** Two LEDs are connected to display the result of Full Subtractor.   
+* **Outputs:** Two LEDs are connected to display the result of Full Subtractor.
+
+![hd1](https://github.com/harsha240yeager/VSDSquadron_miniInternship/assets/105859299/761a0560-7ef2-4e37-b190-dea982c98970)
+
   
 ### **Truth Table to Verify the Full Adder**  
 
