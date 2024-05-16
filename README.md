@@ -1,16 +1,6 @@
 #  VSDSquadron Reseacrh Internship 2024
 
 
-## Contact info
-
-**Name:** Narra Harshavardhan Reddy                                                                        
-  **College:** JNTUH College of Engineering Hyderabad  
-**Email ID:** harshavardhan240.work@gmail.com  
-**GitHub Profile:** [harsha-github](https://github.com/harsha240yeager)           
- **Linkedin Profile:** [harsha-linkedin](https://www.linkedin.com/in/harsha240)
-
-----------------------------------------------------------------------------------------------------------------
-
 
 # TASK 1
 
