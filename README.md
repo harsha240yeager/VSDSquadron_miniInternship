@@ -1,6 +1,5 @@
 #  VSDSquadron Reseacrh Internship 2024
 
-The program is designed around the RISC-V architecture, utilizing open-source tools to provide comprehensive education on VLSI chip design and the RISC-V instruction set architecture. Participants will gain hands-on experience and theoretical knowledge under the expert guidance of Mr. Kunal Ghosh..
 
 ## Contact info
 
@@ -12,9 +11,6 @@ The program is designed around the RISC-V architecture, utilizing open-source to
 
 ----------------------------------------------------------------------------------------------------------------
 
-<details>
-<summary><b>Task 1:</b> The objective is to install all essential tools required for the internship, including Ubuntu on VMBox, the GNU Toolchain, GTKWave, Yosys, and the iVerilog simulator.</summary>   
-<br>
 
 # TASK 1
 
@@ -79,12 +75,8 @@ $ sudo apt install gtkwave
 
 ![gtkwave](https://github.com/harsha240yeager/VSDSquadron_miniInternship/assets/105859299/c00d0487-dfec-4f31-be8b-0cf29c2f9e57)
 
-</details>
 
 --------------------------------------------------------------------
-
-<details>
-<summary><b>Task 2:</b> The objective is to discern the instruction type of each provided instruction and to present its precise 32-bit instruction code in the designated format for the respective instruction type.</summary>
 
 ## TASK 2 
 
@@ -287,13 +279,9 @@ The specific size and arrangement of these fields can vary depending on the inst
 
    ![p13](https://github.com/harsha240yeager/VSDSquadron_miniInternship/assets/105859299/10b69184-494e-445a-a645-b920317f4636)
 
-</details>
 
 ---------------------------------------------------
 
-<details>
-<summary><b>Task 3:</b> The task involves referencing both C-based and RISC-V-based laboratory videos and subsequently executing the process of compiling C code using both the GCC compiler and the RISC-V compiler.</summary>
-  
  # Task 3
 
   Refer to C based Lab video and RISC-V based lab videos. Complete exact steps on your machine. Upload snapshot of compiled C code and RISC-V Objdmp on your GitHub repo.
@@ -326,12 +314,8 @@ $ leafpad sum1ton.c &
 ```
 ![s5](https://github.com/harsha240yeager/VSDSquadron_miniInternship/assets/105859299/16899512-5120-477a-9e38-638ce2c1acf9)
 
-</details>
 
--------------------------------------------------
-
-<details>
-<summary><b>Task 4:</b> The task entails conducting SPIKE simulation and debugging the C code by employing the Interactive Debugging Mode using Spike.</summary>
+-----------------------------------------------
 
 
 # TASK 4
@@ -382,14 +366,8 @@ until pc 0 100b0 (program counter(PC) to run till the starting address of the "m
 ```
 ![spike](https://github.com/harsha240yeager/VSDSquadron_miniInternship/assets/105859299/c0d8f4ad-6581-4352-b905-f8317a6ca277)
 
-</details>
 
 ----------------------------------------
-
-<details>
-<summary><b>Task 5:</b> 
-Utilizing the RISC-V Core's Verilog netlist and testbench, conduct an experiment involving Functional Simulation and observe the resulting waveforms</summary>  
-<br>
 
 # TASK 5
 
@@ -468,13 +446,7 @@ IR - 32 bit Instruction , RD - Destination Register , A & B - Source Registers ,
 
 ![ii10](https://github.com/harsha240yeager/VSDSquadron_miniInternship/assets/105859299/831ab3f9-3772-4baf-af73-847a48d0a12d)
 
-
-</details>  
-
---------------------------------------------------------------- 
-
-<details>
-<summary><b>Task 6:</b> The culminating task of this internship entails implementing a digital circuit utilizing VSDSquadron Mini and verifying the functionality by assessing the building and uploading process of a C program file onto the RISC-V processor</summary> 
+----------------------------------------------- 
 
 
 ## Implementing Full Subtractor using VSDSquadron Mini  
@@ -486,13 +458,12 @@ This project involves the implementation of a Full Subtractor combinational circ
 
   
 ### **Components Required**  
-* VSDSquadron Mini  
-* Push Buttons for Input of binary data  
-* 2 LEDs for displaying the Output  
+* VSDSquadron Mini board 
+* Push Buttons  
+* 2 LEDs  
 * Breadboard  
 * Jumper Wires  
-* VS Code for Software Development  
-* PlatformIO multi framework professional IDE
+* VS Code , Platformio
 
 ### **Logical Diagram and Expressions**
 
@@ -518,13 +489,11 @@ D   = (A XOR B) XOR Bin
 ---     
   
 ### **Hardware Connections**  
-* **Input:** Three input of single bit are connected to the GPIO pins of VSDSquadron Mini via push buttons mounted on the breadboard.  
-* **Outputs:** Two LEDs are connected to display the result of Full Subtractor.
 
 ![hd1](https://github.com/harsha240yeager/VSDSquadron_miniInternship/assets/105859299/761a0560-7ef2-4e37-b190-dea982c98970)
 
   
-### **Truth Table to Verify the Full Adder**  
+### **Truth Table to Verify the Full Subtractor**  
 
 ![sub_truth](https://github.com/harsha240yeager/VSDSquadron_miniInternship/assets/105859299/5ec2821d-c295-4eee-badb-1e8b0a0df4f6)
 
@@ -630,17 +599,9 @@ int main()
 
 [Video link](https://drive.google.com/file/d/1pPG_-_EH2geWBX1sQKpaL642XB0bNlLJ/view?usp=sharing)
 
-</details>
 
---------------------------------------------------------------
 
-<details>
-<summary>Acknowledgement</summary>
-<br>
 
->*I extend my heartfelt gratitude to Kunal Ghosh Sir for providing an exceptional internship experience focused on RISC-V Architecture using VSDSquadron Mini. This opportunity has enabled me to delve into the realm of RISC-V with enthusiasm, serving as an invaluable kickstart to my journey. I have cherished every moment of this internship program and am immensely grateful to VLSI System Design for offering such an extraordinary research internship opportunity.*  
-
-</details>
 
 
 
